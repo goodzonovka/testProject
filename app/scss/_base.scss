@@ -1,0 +1,73 @@
+*,
+*:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.36px;
+  font-family: 'Proxima Nova';
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg, img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  flex-shrink: 0;
+}
+
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 120px;
+  padding-top: 47px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+  }
+  .section-title {
+    margin-bottom: 57px;
+    padding-top: 45px;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.9px;
+    svg {
+      width: 19.06px;
+      height: 20px;
+    }
+  }
+}
